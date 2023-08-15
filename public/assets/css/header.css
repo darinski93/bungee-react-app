@@ -1,0 +1,50 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    height: 5%;
+    z-index: 10;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+
+}
+
+.navbar li a {
+    color: white;
+}
+
+.navbar li {
+    margin-right: 20px;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.logo-header {
+    max-width: 120px;
+    max-height: 120px;
+    position: absolute;
+    top: -45px; 
+    left: 5px; 
+}

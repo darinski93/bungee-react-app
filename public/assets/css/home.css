@@ -1,0 +1,94 @@
+.split-background {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.black-side {
+  flex: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.attractions-logo{
+  margin-bottom: -100px;
+}
+
+.attractions {
+  display: flex;
+  height: auto;
+  gap: 10px; 
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+
+.attractions img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 150px; 
+  height: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+@keyframes imagePopUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.attractions img:nth-child(1) {
+  animation: imagePopUp 0.5s ease-in-out 0.5s forwards;
+}
+
+.attractions img:nth-child(2) {
+  animation: imagePopUp 0.5s ease-in-out 1s forwards;
+}
+
+.attractions img:nth-child(3) {
+  animation: imagePopUp 0.5s ease-in-out 1.5s forwards;
+}
+
+.attractions img:nth-child(4) {
+  animation: imagePopUp 0.5s ease-in-out 2s forwards;
+}
+
+.white-side {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.explore-button:hover {
+  background-color: #2980b9;
+}
